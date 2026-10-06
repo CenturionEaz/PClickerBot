@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "PokéClicker Master Bot",
+  "version": "3.2.0",
+  "description": "Complete internal automation bot for PokéClicker: High-Speed Combat, X-Ray Mining, Auto-Breeding, Dungeons, and Cyber Glassmorphic GUI.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.pokeclicker.com/*",
+    "*://pokeclicker.com/*",
+    "file://*/*",
+    "http://localhost/*",
+    "https://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.pokeclicker.com/*",
+        "*://pokeclicker.com/*",
+        "file://*/*"
+      ],
+      "js": [
+        "bundle.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "bundle.js",
+        "icons/*.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
