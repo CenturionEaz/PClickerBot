@@ -249,6 +249,6 @@ The script will bundle `pokeclicker-bot-core.js`, `pokeclicker-bot-ui.js`, and `
 
 This project is licensed under the **MIT License with Educational & Non-Harm Disclaimer** — see the [LICENSE](LICENSE) file for complete terms.
 
-* **Created by:** [CenturionEaz (Pratyush Rai)](https://github.com/CenturionEaz)
+* **Created by:** [CenturionEaz](https://github.com/CenturionEaz)
 * **Assisted by:** Advanced AI Pair Programming & Code Architecture Tools
 * **Disclaimer:** Provided strictly "AS IS" for educational research and reverse-engineering study. The author assumes no responsibility for use or misuse.
